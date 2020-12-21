@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
+import Parent from './Parent';
 function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ function App() {
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
       <Header />
       <Footer />
+      <Parent />
     </div>
   );
 }

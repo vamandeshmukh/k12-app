@@ -1,34 +1,64 @@
 import './App.css';
 import React from 'react';
-import AboutCompany from './AboutCompany';
+import AboutChild from './AboutChild';
 
-class About extends React.Component {
+// Parent component 
+// class About extends React.Component {
 
-    constructor() {
-        super();
-        this.state = { id: 0, myName: '', salary: 10.0, phones: { home: 1010, office: 2020 } };
-    }
+//     constructor() {
+//         super();
+//         this.state = { id: 0, myName: '', salary: 10.0, phones: { home: 1010, office: 2020 } };
+//     }
 
-    setMySalary = (abc) => {
-        console.log("Slaary hiked.");
-        this.setState({ salary: this.state.salary * 2 });
-    }
+//     setMySalary = () => {
+//         this.setState({ salary: this.state.salary * 2 });
+//     }
 
-    render() {
-        return (
-            <div className="App">
-                <h1 className="display-4">this is About of class component</h1>
-                <p className='k12'>this is my About of class component paragrph</p>
-                < AboutCompany name="K12" city="Bengaluru"></AboutCompany>
-                {/* <p> {this.state.salary} </p>
-                <button type="button" onClick={this.setMySalary} >Click me</button>
-                <form>
-                    <p class="display-4">Please enter data here - </p>
-                    <input type="text" onChange={this.myName}></input>
-                </form> */}
+//     setChildData =(abc) => {
+//         this.setState({salary : abc});
 
-            </div>
-        )
-    }
+//     }
+
+//     render() {
+//         return (
+//             <div className="App">
+//                 <h1 className="display-4">this is About of class component</h1>
+//                 <p className='k12'>this is my About of class component paragrph</p>
+//                 < AboutChild name="K12" city="Bengaluru" abc={this.setChildData} />
+//                 <p> {this.state.salary} </p>
+//                 <button type="button" onClick={this.setMySalary} >Click me</button>
+//             </div>
+//         )
+//     }
+// }
+
+let name = '';
+
+const setName = (abc) => {
+    name = abc;
 }
+const About = () => {
+
+    return (
+        <div>
+            <p>AboutParent</p>
+            <p>{name}</p>
+      <AboutChild fun={ () => setName(null)} name={name} />
+        </div>
+    );
+  };
+
 export default About;
+
+// const App = () => {
+//     const [user, setUser] = useState(null);
+  
+//     return user ? (
+//       <AuthWebsite logout={() => setUser(null)} user={user} />
+//     ) : (
+//       <NoAuthWebsite login={username => setUser(username)} />
+//     );
+//   };
+
+
+
