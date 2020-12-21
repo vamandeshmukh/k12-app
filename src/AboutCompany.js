@@ -4,7 +4,7 @@ const AboutCompany = (props) => {
     return (
         <div>
             <p >About Company </p>
-            <p> {props.name} {props.city} {props.children.ppp} </p>
+            {/* <p> {props.name} {props.city} {props.children.ppp} </p> */}
         </div>
     );
 }

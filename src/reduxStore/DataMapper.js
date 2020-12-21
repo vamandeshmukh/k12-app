@@ -14,8 +14,7 @@ const mapDispatchToProps = (dispatch) => {
   console.log('map dispatched to props');
   return bindActionCreators({ onChange: Action }, dispatch);
 }
-const DataMapper = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(ReduxApp2)
+const DataMapper = 
+connect(mapStateToProps, mapDispatchToProps) (ReduxApp2)
+
 export default DataMapper;
