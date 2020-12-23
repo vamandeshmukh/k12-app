@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Action from './Action';
-// import ReduxApp from './ReduxApp';
+import ReduxApp from './ReduxApp';
 import ReduxApp2 from './ReduxApp2';
 
 const mapStateToProps = (state) => {
@@ -12,9 +12,10 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch) => {
   console.log('map dispatched to props');
+  // code modification 
   return bindActionCreators({ onChange: Action }, dispatch);
 }
-const DataMapper = 
-connect(mapStateToProps, mapDispatchToProps) (ReduxApp2)
+const DataMapper =
+  connect(mapStateToProps, mapDispatchToProps)(ReduxApp2)
 
 export default DataMapper;

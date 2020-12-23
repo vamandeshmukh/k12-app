@@ -1,8 +1,8 @@
 import React from 'react';
 import '../App.css';
-class ReduxApp extends React.Component {
+class ReduxApp2 extends React.Component {
     onChangeHandler(evt) {
-        console.log('ReduxApp started.');
+        console.log('ReduxApp2 started.');
         this.props.onChange(evt.target.value);
     }
     render() {
@@ -18,6 +18,4 @@ class ReduxApp extends React.Component {
         );
     }
 }
-export default ReduxApp;
-
-
+export default ReduxApp2;

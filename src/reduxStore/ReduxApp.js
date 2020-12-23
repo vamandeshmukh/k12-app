@@ -8,7 +8,6 @@ class ReduxApp extends React.Component {
     render() {
         return (
             <div className="App">
-                <p>Enter data here - </p>
                 <p className="App">
                     {this.props.data}
                     {' '}

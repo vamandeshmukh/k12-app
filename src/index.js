@@ -10,7 +10,8 @@ import Reducer from './reduxStore/Reducer';
 
 let store = createStore
   (Reducer, { data: 'Initial data' });
-ReactDOM.render(
+
+  ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
