@@ -26,6 +26,7 @@ class Parent extends React.Component {
         return (
             <div>
                 <p>Parent Data</p>
+                
                 <Child parentCallback= {this.handleCallback} />
                 {this.state.parentData}
             </div>
